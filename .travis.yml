@@ -16,8 +16,32 @@ jobs:
     - php: 7.3
     - php: 7.4
     - php: hhvm-3.18
+# ppc64le related code
+    - php: 5.3
+      arch: ppc64le
+      dist: precise
+    - php: 5.4
+      arch: ppc64le
+    - php: 5.5
+      arch: ppc64le
+    - php: 5.6
+      arch: ppc64le
+    - php: 7.0
+      arch: ppc64le
+    - php: 7.1
+      arch: ppc64le
+    - php: 7.2
+      arch: ppc64le
+    - php: 7.3
+      arch: ppc64le
+    - php: 7.4
+      arch: ppc64le
+    - php: hhvm-3.18
+      arch: ppc64le
   allow_failures:
     - php: hhvm-3.18
+    - php: hhvm-3.18
+      arch: ppc64le
 
 install:
   - composer install
